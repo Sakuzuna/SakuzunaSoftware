@@ -44,10 +44,6 @@ print(f"""{Fore.RED}
          ╚════════════════════════════════════════════════════════════════════╝ 
  {Reset}""")
 
-#Аргументы
-def get_argument():
-    parser = argparse.ArgumentParser(description=dispaly_banner())
-    
 input(f"{Yellow}Введите запрос{Reset}")
 
 def search_files(query):
