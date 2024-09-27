@@ -1,24 +1,33 @@
+import colorama
 from colorama import Fore
-import select
-import os
-import csv
+import os 
+import csv 
 import sys
 
-input("Введите ник")
+Red = Fore.RED 
+Yellow = Fore.YELLOW 
+Reset = Fore.RESET 
 
-if select == "User":
-    print("Успешно!")
-input("Введите пароль")
+print(f"{Yellow}Введите юзернейм{Reset}")
 
-if select == "Pass":
-    print("Пароль подошел запускаю софт!")
+def юзернейм():
+    input()
+    
+if input() == "Sakuzuna":
+    print(f"{Red}Юзернейм подошел{Reset}")
+    print(f"{Red}Введите пароль{Reset}")
+else:
+    print(f"{Red}Неправильный юзернейм{Reset}")
+    exit()
 
-#Код был написан наполовину вручную наполовину с гптшкой
-Red = Fore.RED
-Yellow = Fore.YELLOW
-Blue = Fore.BLUE
-Green = Fore.GREEN
-Reset = Fore.RESET
+if input() == "YaPidar":
+    print(f"{Red}Пароль подошел{Reset}")
+    print(f"{Red}Нажмите ENTER для запуска софта{Reset}")
+else:
+    print(f"{Red}Неправильный пароль{Reset}")
+    exit()
+    
+юзернейм()
 
 print(f"""{Fore.RED} 
   .--.--.                     ,-.                                                                  
